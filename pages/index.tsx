@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import SplitPane from "react-split-pane";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 
@@ -14,6 +15,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <SplitPane split="vertical" minSize={50} defaultSize={100}>
+        <div>111</div>
+        <div>222</div>
+      </SplitPane>
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
@@ -26,7 +31,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{" "}
+              By1{" "}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
@@ -81,7 +86,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
+              Learn <span>1-&gt;</span>
             </h2>
             <p className={inter.className}>
               Learn about Next.js in an interactive course with&nbsp;quizzes!
